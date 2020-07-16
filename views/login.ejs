@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UReport</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/82fc3564e3.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../img/Faviico.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+                <img src="../img/Artboard 3.png" width="50px" height="50px" alt="Logo">
+           <a class="navbar-brand text-white" href="/">UReport</a>
+           <button class="navbar-toggler text-white" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-white"></span>
+           </button>
+
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              <ul class="navbar-nav mr-auto">
+                 <li class="nav-item">
+                    <a class="nav-link text-white" href="/responder"><i
+                          class="fas fa-check-circle mr-1"></i>Respondidos</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-white" href="/denegado"><i
+                          class="fas fa-minus-circle mr-1"></i>Denegados</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-white" href="/registrarse"><i
+                          class="fas fa-user-plus mr-1"></i>Registrarse</a>
+                 </li>
+              </ul>
+
+              <form class="ml-6">
+                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                 <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+              </form>
+
+              <a class="btn btn-pgn  ml-2 text-white" href="/login">Log IN</a>
+
+           </div>
+
+        </div>
+
+     </nav>
+
+    <div class="container mt-6 text-center">
+        <div class="row">
+            <div class="card shadow-card col-lg-6">
+                <h5 class="mt-6 custom-size">Iniciar Sesión</h5>
+                <hr class="hr-primary">
+                <form class="p-5 bg-white" action="registro.php" method="post" enctype='multipart/form-data'>
+                    <div class="row form-group text-center">
+                        <div class="col-md-12">
+                            <label class="text-black" for="txtNick">Nombre de Usuario</label>
+                            <input type="text" name="txtNick" placeholder="Nick.." class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="txtClave">Contraseña</label>
+                            <input type="password" name="txtClave" placeholder="Clave" class="form-control">
+                        </div>
+
+
+                                <input type="submit" value="INICIAR SESIÓN"
+                                    class="btn btn-pgn btn-block mt-3 py-2 px-4 text-white">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</html>
